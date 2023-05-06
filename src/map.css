@@ -1,0 +1,10 @@
+.city-marker {
+    background-color: #2b8cbe;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px;
+    text-align: center;
+    width: 80px;
+  }
