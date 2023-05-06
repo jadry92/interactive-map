@@ -11,7 +11,7 @@ function countTotal(idChecked: string[], data: DataJson[]) : number {
 	return rows.reduce((count, curr) => count + curr.count,0)
 }
 
-function Table(props: TableProps) {
+const Table: React.FC<TableProps> = (props) => {
   const { data } = props;
   const [checkedRows, setCheckedRows] = useState<string[]>([]);
 

@@ -4,7 +4,7 @@ interface DataJson {
     id: string;
     name: string;
     location: string;
-    coordinates: number[] | null;
+    coordinates: [number,number];
     count: number;
 }
 

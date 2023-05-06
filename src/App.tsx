@@ -3,6 +3,16 @@ import dataJson from './assets/data/data.json'
 import Table from './Table';
 
 
+const data: DataJson[] = dataJson.map(row => (
+  {
+    id: row.id,
+    name: row.name,
+    location: row.location,
+    count: row.count,
+    coordinates: [row.coordinates[0], row.coordinates[1]]
+  }
+))
+
 const App: React.FC = () => {
   return (
     <div>
@@ -13,7 +23,7 @@ const App: React.FC = () => {
         </p>
       </div>
       
-      <Table data={dataJson}/>
+      <Table data={data}/>
     </div>
   );
 };
